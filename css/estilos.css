@@ -1,0 +1,223 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C8C8C8;
+    background-image: url("../img/fundo3.jpg");
+    background-size: cover;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+
+/*------------------------- Cabeçalho ------------------------------*/
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(77, 74, 74, 0.7);
+    height: 120px;
+    width: 100vw;
+}
+
+#logo {
+    padding: 0px;
+    margin: 15px;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 100vw;
+    max-width: 200px;
+}
+
+#caixa-pes {
+    margin: auto 30px auto auto;
+}
+
+#pes-bar {
+    border-radius: 5px;
+    height: 40px;
+    font-size: larger;
+}
+/* ----------------------------------------------------------------- */
+
+
+/* ---------------------- Caroussel ----------------------------*/
+#embrulho-itens {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#itens {
+    display: flex;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scroll-behavior: smooth;
+
+}
+
+.item {
+    flex: none;
+    
+    width: 100%;
+
+    scroll-snap-align: start;
+
+    pointer-events: none;
+}
+
+img {
+    padding: 20px;
+    width: 100%;
+}
+
+    /* Barra de rolagem do carrosse */
+    #itens::-webkit-scrollbar {
+    background-color: black;
+    }
+    
+    #itens::-webkit-scrollbar-track {
+    background: rgb(131, 127, 127);
+    }
+    
+    #itens::-webkit-scrollbar-thumb {
+    background: #C8C8C8;
+    border-radius: 10px;
+    }
+
+
+/* ----------------------------------------------------------- */
+
+
+/*--------------------------------- Seção Dica Hidratação ---------------------------*/
+
+
+.dicashid_titulo {
+    background-color: rgba(77, 74, 74, 0.7);
+    border-radius: 5px 5px 50px 5px;
+    margin: 50px auto 50px auto;
+    padding: 30px;
+    color: white;
+}
+
+.dicashid {
+    padding-bottom: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+    width: 70vw;
+    color: white;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.dicashid_num1 {
+    background-color: green;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.dicashid_num2 {
+    background-color: red;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.dicashid_num3 {
+    background-color: blue;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.dicashid_num4 {
+    background-color: blueviolet;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.dicashid_num5 {
+    background-color: brown;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.dicashid_num6 {
+    background-color: orange;
+    border-radius: 0px 0px 30px 30px;
+}
+
+
+.dicashid_item {
+    font-style: oblique;
+    padding: 10px;
+    padding-top: 0px;
+    font-size: larger;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    background-color: rgb(143, 118, 118);
+    border-radius: 0px 0px 20px 20px;
+    margin: 0 auto;
+}
+
+#dicashid_cor1 {
+    background-color: rgb(126, 189, 33);
+}
+
+#dicashid_cor2 {
+    background-color: rgb(228, 120, 120);
+}
+
+#dicashid_cor3 {
+    background-color: rgb(0, 162, 255);
+}
+
+#dicashid_cor4 {
+    background-color: rgb(195, 146, 241);
+}
+
+#dicashid_cor5 {
+    background-color: rgb(182, 112, 112);
+}
+
+#dicashid_cor6 {
+    background-color: rgb(221, 183, 114);
+}
+
+
+#realce {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/*------------------------ Rodapé --------------------------*/
+.rodape{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    color: black;
+    place-items: center;
+    background-color: rgba(131, 127, 127, 0.9);
+    height: 100px;
+    width: 100vw;
+}
+
+.rodape_texto {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.links_logos {
+    margin-left: 70%;
+}
+
+.logos {
+    width: 40px;
+    padding: 0px;
+}
+
+/* --------------------------------------------------------- */
